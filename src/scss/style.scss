@@ -1,0 +1,60 @@
+@import '_variables';//importa del documento
+
+@mixin cell ($padd){
+  padding: ($padd);
+  color: $color-blanco;
+  margin-bottom: 5px;
+}
+section{
+  display: grid;
+}
+p{
+  font: $fuente-letra;
+}
+div#titulo>h1{
+  font: $subtitle-font;
+  color: $color-blanco;
+  margin: 0 auto;//en el centro sin margenes
+  text-align: left;
+}
+#titulo{
+  width: $contenedor-ancho;
+  background: $color-amarillo;
+  height: $contenedor-largo;
+  padding: $contenedor-padding
+
+}
+.aside{
+  background: $color-negro;
+  color: $color-blanco;
+  text-align: $texto-centro;
+  margin-top: 25px;
+  margin-bottom: $margen-abajo;
+}
+#footer{
+  @extend .aside;
+  height: 50px;
+  width: $contenedor-ancho;
+  padding: $contenedor-padding;
+}
+ul{
+  padding: 15px;
+
+  margin-top: 0;
+  li{
+    @include cell (8px);
+    background: $color-negro;
+  }
+  li#amarillo{
+    @include cell (8px) ;
+    background: $color-amarillo;
+  }
+}
+
+table{
+  border: solid black 2px;
+  caption, thead, tbody{
+    @extend table;
+    background: pink;
+  }
+}

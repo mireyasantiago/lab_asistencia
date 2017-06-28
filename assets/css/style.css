@@ -1,0 +1,64 @@
+@media (min-width: 769px) {
+  section {
+    grid-template-columns: 1fr 2fr 1fr; } }
+@media (min-width: 669px) and (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto; }
+
+  #contenido-instruccion {
+    grid-column: 1fr; } }
+@media (min-width: 0px) and (max-width: 668px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; } }
+section {
+  display: grid; }
+
+p {
+  font: 13px Arial; }
+
+div#titulo > h1 {
+  font: 34px Helvetica;
+  color: white;
+  margin: 0 auto;
+  text-align: left; }
+
+#titulo {
+  width: 100%;
+  background: #f7b617;
+  height: 80px;
+  padding: 20px; }
+
+.aside, #footer {
+  background: #2b2b2b;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px; }
+
+#footer {
+  height: 50px;
+  width: 100%;
+  padding: 20px; }
+
+ul {
+  padding: 15px;
+  margin-top: 0; }
+  ul li {
+    padding: 8px;
+    color: white;
+    margin-bottom: 5px;
+    background: #2b2b2b; }
+  ul li#amarillo {
+    padding: 8px;
+    color: white;
+    margin-bottom: 5px;
+    background: #f7b617; }
+
+table, table caption, table thead, table tbody {
+  border: solid black 2px; }
+  table caption, table thead, table tbody {
+    background: pink; }
+
+/*# sourceMappingURL=style.css.map */
